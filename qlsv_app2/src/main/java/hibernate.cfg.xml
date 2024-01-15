@@ -1,0 +1,20 @@
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/qlsv2</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password" />
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		<!-- Mapping đây này -->
+		<mapping class="model.sinhvien" />
+		<mapping class="model.tksv" />
+		<mapping class="model.diem" />
+		<mapping class="model.buoihoc" />
+		<mapping class="model.monhoc" />
+		<mapping class="model.lop" />
+		<mapping class="model.giangvien" />
+		<mapping class="model.tkgv" />
+	</session-factory>
+</hibernate-configuration>
